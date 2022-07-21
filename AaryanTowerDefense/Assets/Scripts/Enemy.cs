@@ -29,5 +29,10 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject); // when the enemy is at the last checkpoint, kill it
             // lose health or lives for player
         }
+        if(health <= 0)
+        {
+            FindObjectOfType<GameManager>().gold += 5; // get 5 gold
+            Destroy(gameObject);
+        }
     }
 }

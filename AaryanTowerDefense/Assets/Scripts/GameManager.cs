@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI; // grants access to UI classes
 
 public class GameManager : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class GameManager : MonoBehaviour
     public Building towerToPlace; // the tower we want to place
     public CustomCursor customCursor; // access to the custom mouse cursor
     public Tile[] tiles; // grid or array of all of the tiles
+
+    public Text goldDisplay; // text on how much gold we have
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +21,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         PlaceTower(); // placing tower
+        goldDisplay.text = "Gold: " + gold; // display "Gold: XXXXX"
     }
 
     public void PlaceTower()
