@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &881884752174778897
+--- !u!1 &2673486395373980224
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,39 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 881884752174778908}
-  - component: {fileID: 881884752174778909}
-  - component: {fileID: 881884752174778910}
-  - component: {fileID: 881884752174778911}
-  - component: {fileID: 881884752174778896}
+  - component: {fileID: 5498866509660829650}
+  - component: {fileID: 4306470392545868851}
+  - component: {fileID: 7835650301455333005}
+  - component: {fileID: 308586054429944511}
+  - component: {fileID: 3369602813407783340}
   m_Layer: 6
-  m_Name: OrcEnemy
+  m_Name: Ghost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &881884752174778908
+--- !u!4 &5498866509660829650
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 881884752174778897}
+  m_GameObject: {fileID: 2673486395373980224}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.759, y: 2.068, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: -8.328906, y: 2.0833356, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &881884752174778909
+--- !u!212 &4306470392545868851
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 881884752174778897}
+  m_GameObject: {fileID: 2673486395373980224}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2599487222029674577, guid: 77a575f1262890e4390b8ffb12211a19, type: 3}
+  m_Sprite: {fileID: 8365356280400467635, guid: 77a575f1262890e4390b8ffb12211a19, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -85,20 +85,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &881884752174778910
+--- !u!61 &7835650301455333005
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 881884752174778897}
+  m_GameObject: {fileID: 2673486395373980224}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.014232516, y: -0.009602696}
+  m_Offset: {x: -0.015174843, y: -0.066769615}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -109,16 +109,16 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.09764457, y: 0.23178631}
+  m_Size: {x: 0.14413454, y: 0.28374422}
   m_EdgeRadius: 0
---- !u!50 &881884752174778911
+--- !u!50 &308586054429944511
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 881884752174778897}
+  m_GameObject: {fileID: 2673486395373980224}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -132,13 +132,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &881884752174778896
+--- !u!114 &3369602813407783340
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 881884752174778897}
+  m_GameObject: {fileID: 2673486395373980224}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 167ecd04941d8ef48b76e255a78d8b13, type: 3}
@@ -146,5 +146,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   path: {fileID: 0}
   currentPoint: 0
-  health: 3
-  speed: 1
+  health: 5
+  speed: 1.2
