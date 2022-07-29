@@ -9,12 +9,17 @@ public class GameManager : MonoBehaviour
     public Building towerToPlace; // the tower we want to place
     public CustomCursor customCursor; // access to the custom mouse cursor
     public Tile[] tiles; // grid or array of all of the tiles
-
+    public int lives; // tell us how many lives we have;
+    public Text livesDisplay; // show on our screen how many lives we have
+    public Text waveDisplay; // show the user what wave they are on
     public Text goldDisplay; // text on how much gold we have
+    public GameObject loseScreen; // reference to the lose screen canvas
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1; // always start the game with normal time
         customCursor.gameObject.SetActive(false); // hiding the custom cursor game object to start
+        loseScreen.SetActive(false); // hide the lose screen
     }
 
     // Update is called once per frame
@@ -22,6 +27,13 @@ public class GameManager : MonoBehaviour
     {
         PlaceTower(); // placing tower
         goldDisplay.text = "Gold: " + gold; // display "Gold: XXXXX"
+        livesDisplay.text = "Lives: " + lives; // display our lives "Lives: X"
+        waveDisplay.text = "Wave: " + FindObjectOfType<EnemySpawner>().wave; // this will display "Wave: XX"
+        if(lives == 0)
+        {
+            loseScreen.SetActive(true); // show lose screen
+            Time.timeScale = 0; // pause our time
+        }
     }
 
     public void PlaceTower()

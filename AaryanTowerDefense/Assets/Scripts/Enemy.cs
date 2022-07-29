@@ -26,6 +26,7 @@ public class Enemy : MonoBehaviour
         }
         if(currentPoint >= path.checkpoints.Length)
         {
+            FindObjectOfType<GameManager>().lives--; // lose a life when enemy hits the last checkpoint
             Destroy(gameObject); // when the enemy is at the last checkpoint, kill it
             // lose health or lives for player
         }

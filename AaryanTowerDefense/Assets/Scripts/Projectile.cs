@@ -14,6 +14,8 @@ public class Projectile : MonoBehaviour
     public float speed; // how fast it goes
     public ProjType type; // what type this projectile is
     public LayerMask layer; // to help with aoe damage
+    public int damage; // how much damage the thing does
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +40,7 @@ public class Projectile : MonoBehaviour
         {
             if (collision.gameObject.GetComponent<Enemy>())
             {
-                collision.gameObject.GetComponent<Enemy>().health--; // subtract 1 health
+                collision.gameObject.GetComponent<Enemy>().health -= damage; // subtract damage
                 Destroy(gameObject);
             }
         }
@@ -50,7 +52,7 @@ public class Projectile : MonoBehaviour
                 Collider2D[] enemiesInBlast = Physics2D.OverlapCircleAll(collision.transform.position, 1, layer);
                 for(int i = 0; i < enemiesInBlast.Length; i++) // loop through enemies in blast
                 {
-                    enemiesInBlast[i].GetComponent<Enemy>().health--; // subtract 1 damage from all enemies
+                    enemiesInBlast[i].GetComponent<Enemy>().health -= damage; // subtract 1 damage from all enemies
                     Destroy(gameObject); 
                 }
             }

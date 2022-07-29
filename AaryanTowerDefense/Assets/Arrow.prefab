@@ -146,3 +146,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   speed: 3
+  type: 0
+  layer:
+    serializedVersion: 2
+    m_Bits: 0
+  damage: 1

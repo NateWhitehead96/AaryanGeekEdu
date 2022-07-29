@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2036144875561835478
+--- !u!1 &5342177145777813421
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,39 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5019331215290432720}
-  - component: {fileID: 220260878870227782}
-  - component: {fileID: 3939782348066954706}
-  - component: {fileID: 264563399050380202}
-  - component: {fileID: 3266106629564632793}
-  m_Layer: 0
-  m_Name: Cannonball
+  - component: {fileID: 8377078488535776727}
+  - component: {fileID: 4576533320606114316}
+  - component: {fileID: 4840398175581688521}
+  - component: {fileID: 7294920126206159517}
+  - component: {fileID: 4914999445435281185}
+  m_Layer: 6
+  m_Name: Mummy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5019331215290432720
+--- !u!4 &8377078488535776727
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2036144875561835478}
+  m_GameObject: {fileID: 5342177145777813421}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.49742663, y: -3.9714355, z: 0}
+  m_LocalPosition: {x: -8.337, y: 2.048, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &220260878870227782
+--- !u!212 &4576533320606114316
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2036144875561835478}
+  m_GameObject: {fileID: 5342177145777813421}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1295202655654907776, guid: 77a575f1262890e4390b8ffb12211a19, type: 3}
+  m_Sprite: {fileID: 3789641938539289211, guid: 77a575f1262890e4390b8ffb12211a19, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -85,30 +85,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &3939782348066954706
-CircleCollider2D:
+--- !u!61 &4840398175581688521
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2036144875561835478}
+  m_GameObject: {fileID: 5342177145777813421}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.003009513, y: 0}
+  m_Offset: {x: -0.016582489, y: -0.04270196}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.12590034
---- !u!50 &264563399050380202
+  m_Size: {x: 0.12987518, y: 0.33384943}
+  m_EdgeRadius: 0
+--- !u!50 &7294920126206159517
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2036144875561835478}
+  m_GameObject: {fileID: 5342177145777813421}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -122,22 +132,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &3266106629564632793
+--- !u!114 &4914999445435281185
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2036144875561835478}
+  m_GameObject: {fileID: 5342177145777813421}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d307445b56cec441b6cf75cdd9013e3, type: 3}
+  m_Script: {fileID: 11500000, guid: 167ecd04941d8ef48b76e255a78d8b13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  speed: 2
-  type: 1
-  layer:
-    serializedVersion: 2
-    m_Bits: 64
-  damage: 2
+  path: {fileID: 0}
+  currentPoint: 0
+  health: 8
+  speed: 1
