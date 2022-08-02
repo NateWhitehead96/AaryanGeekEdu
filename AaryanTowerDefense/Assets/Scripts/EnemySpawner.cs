@@ -57,6 +57,10 @@ public class EnemySpawner : MonoBehaviour
         {
             currentEnemy = 2;
         }
+        if(wave >= 10)
+        {
+            currentEnemy = 3;
+        }
     }
 }
 

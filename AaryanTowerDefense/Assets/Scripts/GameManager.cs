@@ -14,12 +14,14 @@ public class GameManager : MonoBehaviour
     public Text waveDisplay; // show the user what wave they are on
     public Text goldDisplay; // text on how much gold we have
     public GameObject loseScreen; // reference to the lose screen canvas
+    public GameObject pauseCanvas; // pause cnavas in the screen
     // Start is called before the first frame update
     void Start()
     {
         Time.timeScale = 1; // always start the game with normal time
         customCursor.gameObject.SetActive(false); // hiding the custom cursor game object to start
         loseScreen.SetActive(false); // hide the lose screen
+        pauseCanvas.SetActive(false); // hide the pause
     }
 
     // Update is called once per frame
@@ -33,6 +35,11 @@ public class GameManager : MonoBehaviour
         {
             loseScreen.SetActive(true); // show lose screen
             Time.timeScale = 0; // pause our time
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            pauseCanvas.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 
