@@ -19,7 +19,14 @@ public class Projectile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(type == ProjType.Arrow)
+        {
+            SoundEffectManager.instance.ArrowShoot.Play();
+        }
+        if(type == ProjType.Cannon)
+        {
+            SoundEffectManager.instance.CannonShoot.Play();
+        }
     }
 
     // Update is called once per frame

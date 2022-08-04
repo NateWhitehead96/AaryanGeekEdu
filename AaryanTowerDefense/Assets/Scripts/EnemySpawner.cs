@@ -47,6 +47,7 @@ public class EnemySpawner : MonoBehaviour
     IEnumerator StartNextWave()
     {
         yield return new WaitForSeconds(10); // waiting for some time
+        SoundEffectManager.instance.NextWave.Play(); // play the next wave sound
         wave++; // increase wave
         enemiesRemaining += wave * 2; // every wave increase number of enemies by wave # x 2
         if(wave >= 3)

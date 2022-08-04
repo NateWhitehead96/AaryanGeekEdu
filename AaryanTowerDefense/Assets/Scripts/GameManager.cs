@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     public Text goldDisplay; // text on how much gold we have
     public GameObject loseScreen; // reference to the lose screen canvas
     public GameObject pauseCanvas; // pause cnavas in the screen
+    public bool losing; // to know if we lost
+    public bool pausing; // to know if we paused
     // Start is called before the first frame update
     void Start()
     {
@@ -27,18 +29,24 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PlaceTower(); // placing tower
+        if(losing == false && pausing == false)
+        {
+            PlaceTower(); // placing tower
+        }
+        
         goldDisplay.text = "Gold: " + gold; // display "Gold: XXXXX"
         livesDisplay.text = "Lives: " + lives; // display our lives "Lives: X"
         waveDisplay.text = "Wave: " + FindObjectOfType<EnemySpawner>().wave; // this will display "Wave: XX"
         if(lives == 0)
         {
             loseScreen.SetActive(true); // show lose screen
+            losing = true; // we lost
             Time.timeScale = 0; // pause our time
         }
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && losing == false)
         {
             pauseCanvas.SetActive(true);
+            pausing = true;
             Time.timeScale = 0;
         }
     }
