@@ -34,6 +34,10 @@ public class SoundEffectManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // updates the volume of our sound effects
+        ArrowShoot.volume = volume;
+        CannonShoot.volume = volume;
+        EnemyDie.volume = volume;
+        NextWave.volume = volume;
     }
 }

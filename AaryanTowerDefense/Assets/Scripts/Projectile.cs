@@ -34,7 +34,8 @@ public class Projectile : MonoBehaviour
     {
         if(target == null)
         {
-            Destroy(gameObject);
+            target = transform; // assign the target to itself
+            Destroy(gameObject); // safely destroy the object
         }
 
         transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
