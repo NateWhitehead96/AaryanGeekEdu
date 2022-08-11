@@ -21,6 +21,7 @@ public class SoundEffectManager : MonoBehaviour
 
     public AudioSource ArrowShoot;
     public AudioSource CannonShoot;
+    public AudioSource ArcaneShoot;
     public AudioSource EnemyDie;
     public AudioSource NextWave;
 
@@ -37,6 +38,7 @@ public class SoundEffectManager : MonoBehaviour
         // updates the volume of our sound effects
         ArrowShoot.volume = volume;
         CannonShoot.volume = volume;
+        ArcaneShoot.volume = volume;
         EnemyDie.volume = volume;
         NextWave.volume = volume;
     }

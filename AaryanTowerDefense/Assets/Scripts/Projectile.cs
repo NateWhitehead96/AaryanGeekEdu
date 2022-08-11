@@ -5,7 +5,8 @@ using UnityEngine;
 public enum ProjType
 {
     Arrow,
-    Cannon
+    Cannon,
+    Arcane
 }
 
 public class Projectile : MonoBehaviour
@@ -15,7 +16,9 @@ public class Projectile : MonoBehaviour
     public ProjType type; // what type this projectile is
     public LayerMask layer; // to help with aoe damage
     public int damage; // how much damage the thing does
-    
+
+    // Arcane tower variables
+    float timer;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,18 +30,34 @@ public class Projectile : MonoBehaviour
         {
             SoundEffectManager.instance.CannonShoot.Play();
         }
+        if (type == ProjType.Arcane)
+        {
+            SoundEffectManager.instance.ArcaneShoot.Play();
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(target == null)
+        if (type == ProjType.Arcane)
         {
-            target = transform; // assign the target to itself
-            Destroy(gameObject); // safely destroy the object
+            transform.Translate(Vector3.up * speed * Time.deltaTime); // move it forward
+            timer += Time.deltaTime;
+            if(timer >= 3) // life spawn of the bullet
+            {
+                Destroy(gameObject);
+            }
         }
+        else // if the proj is arrow or cannon, it still moves correctly
+        {
+            if (target == null)
+            {
+                target = transform; // assign the target to itself
+                Destroy(gameObject); // safely destroy the object
+            }
 
-        transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        }
         
     }
 
@@ -64,6 +83,13 @@ public class Projectile : MonoBehaviour
                     Destroy(gameObject); 
                 }
             }
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.GetComponent<Enemy>()) // check to see its hitting an enemy
+        {
+            collision.gameObject.GetComponent<Enemy>().health -= damage; // deal dat damage
         }
     }
 }

@@ -17,4 +17,9 @@ public class Building : MonoBehaviour
     {
         
     }
+
+    private void OnMouseDown()
+    {
+        print(gameObject.name);
+    }
 }
