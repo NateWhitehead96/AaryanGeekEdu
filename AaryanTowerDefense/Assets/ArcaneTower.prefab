@@ -115,6 +115,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cost: 100
   tile: {fileID: 0}
+  canvas: {fileID: 0}
+  damage: 3
 --- !u!58 &6755264659425799263
 CircleCollider2D:
   m_ObjectHideFlags: 0
