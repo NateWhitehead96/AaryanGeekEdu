@@ -10,9 +10,12 @@ public class Enemy : MonoBehaviour
     public int health; // health lol
     public float speed; // how fast it moves
     public Slider healthBar; // access to the health bar
+    public Animator anim; // link to the animation stuff
+    public bool dying; // to know if the enemy is dying
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>(); // link the game objects animator to our variable
         path = FindObjectOfType<Path>(); // its going to find the path script on our path, and set it to this variable
         healthBar.maxValue = health; // set the max value of the slider to be whatever our health is
     }
@@ -34,11 +37,21 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject); // when the enemy is at the last checkpoint, kill it
             // lose health or lives for player
         }
-        if(health <= 0)
+        if(health <= 0 && dying == false)
         {
-            SoundEffectManager.instance.EnemyDie.Play();
-            FindObjectOfType<GameManager>().gold += 5; // get 5 gold
-            Destroy(gameObject);
+            StartCoroutine(EnemyDying());
         }
+    }
+
+    IEnumerator EnemyDying()
+    {
+        dying = true;
+        SoundEffectManager.instance.EnemyDie.Play();
+        FindObjectOfType<GameManager>().gold += 5; // get 5 gold
+        anim.SetBool("dying", dying); // play the death animation
+        GetComponent<BoxCollider2D>().enabled = false; // disable the collider
+        speed = 0;
+        yield return new WaitForSeconds(0.5f); // wait some time
+        Destroy(gameObject); // destroy the enemy
     }
 }
