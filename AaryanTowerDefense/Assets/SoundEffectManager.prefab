@@ -41,7 +41,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0f68a708cc28d2849a1dc0e3f39e2b0f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: fe67c2ee6fb660543a01e872c6fba022, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.327
   m_Pitch: 1
@@ -307,7 +307,7 @@ MonoBehaviour:
   ArcaneShoot: {fileID: 5974068162587560560}
   EnemyDie: {fileID: 4741903926595704438}
   NextWave: {fileID: 4741903925372196078}
-  volume: 0
+  volume: 0.5
 --- !u!1 &4741903926595704433
 GameObject:
   m_ObjectHideFlags: 0

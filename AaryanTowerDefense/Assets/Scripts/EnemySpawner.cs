@@ -50,15 +50,15 @@ public class EnemySpawner : MonoBehaviour
         SoundEffectManager.instance.NextWave.Play(); // play the next wave sound
         wave++; // increase wave
         enemiesRemaining += wave * 2; // every wave increase number of enemies by wave # x 2
-        if(wave >= 3)
+        if(wave >= 5)
         {
             currentEnemy = 1; // start spawning a new enemy type
         }
-        if(wave >= 6)
+        if(wave >= 10)
         {
             currentEnemy = 2;
         }
-        if(wave >= 10)
+        if(wave >= 15)
         {
             currentEnemy = 3;
         }

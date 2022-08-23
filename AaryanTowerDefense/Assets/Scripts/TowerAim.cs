@@ -31,6 +31,7 @@ public class TowerAim : MonoBehaviour
             GameObject newProjectile = Instantiate(projectile, transform.position, transform.rotation); // spawning projectile
             newProjectile.GetComponent<Projectile>().target = enemiesInRange[0].transform; // set the target for the projectile
             newProjectile.GetComponent<Projectile>().damage = GetComponent<Building>().damage; // assign damage from tower to projectile
+            newProjectile.GetComponent<Projectile>().towerThatShot = this; // assign the tower that shot to this gameobject
             timer = 0; // reset timer
         }
         timer += Time.deltaTime; // always count time up

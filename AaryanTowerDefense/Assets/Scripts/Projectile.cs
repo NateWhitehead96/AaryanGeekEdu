@@ -6,7 +6,8 @@ public enum ProjType
 {
     Arrow,
     Cannon,
-    Arcane
+    Arcane,
+    Lightning
 }
 
 public class Projectile : MonoBehaviour
@@ -19,6 +20,11 @@ public class Projectile : MonoBehaviour
 
     // Arcane tower variables
     float timer;
+
+    // lightning tower variables
+    public TowerAim towerThatShot; // the tower that has shot this projectile
+    public List<GameObject> enemies; // all the enemies the projectile can bounce to
+    public int currentEnemy; // the current target
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +39,11 @@ public class Projectile : MonoBehaviour
         if (type == ProjType.Arcane)
         {
             SoundEffectManager.instance.ArcaneShoot.Play();
+        }
+        if(type == ProjType.Lightning)
+        {
+            // play sound
+            enemies = towerThatShot.enemiesInRange; // store all of the enemies near the tower into a list on the projectile
         }
     }
 
@@ -89,7 +100,23 @@ public class Projectile : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<Enemy>()) // check to see its hitting an enemy
         {
-            collision.gameObject.GetComponent<Enemy>().health -= damage; // deal dat damage
+            if (type == ProjType.Arcane)
+            {
+                collision.gameObject.GetComponent<Enemy>().health -= damage; // deal dat damage
+            }
+            if(type == ProjType.Lightning)
+            {
+                collision.gameObject.GetComponent<Enemy>().health -= damage; // deal dat damage
+                currentEnemy++; // target the next enemy
+                if(currentEnemy >= enemies.Count) // we've hit the last enemy
+                {
+                    Destroy(gameObject);
+                }
+                else
+                {
+                    target = enemies[currentEnemy].transform; // assign a new target
+                }
+            }
         }
     }
 }
