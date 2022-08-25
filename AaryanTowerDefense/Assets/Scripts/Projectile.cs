@@ -106,10 +106,12 @@ public class Projectile : MonoBehaviour
             }
             if(type == ProjType.Lightning)
             {
+                collision.gameObject.GetComponent<Enemy>().stunned = true; // stun dat enemy
                 collision.gameObject.GetComponent<Enemy>().health -= damage; // deal dat damage
                 currentEnemy++; // target the next enemy
                 if(currentEnemy >= enemies.Count) // we've hit the last enemy
                 {
+                    target = transform;
                     Destroy(gameObject);
                 }
                 else

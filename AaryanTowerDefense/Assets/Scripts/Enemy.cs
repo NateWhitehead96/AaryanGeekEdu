@@ -12,9 +12,12 @@ public class Enemy : MonoBehaviour
     public Slider healthBar; // access to the health bar
     public Animator anim; // link to the animation stuff
     public bool dying; // to know if the enemy is dying
+    public bool stunned; // to know when the enemy has been hit by lightning
+    float timer; // help us unstun the enemy
     // Start is called before the first frame update
     void Start()
     {
+        EnemySpawner.enemiesAlive++; // increase the enemies alive number by 1
         anim = GetComponent<Animator>(); // link the game objects animator to our variable
         path = FindObjectOfType<Path>(); // its going to find the path script on our path, and set it to this variable
         healthBar.maxValue = health; // set the max value of the slider to be whatever our health is
@@ -25,20 +28,34 @@ public class Enemy : MonoBehaviour
     {
         healthBar.value = health; // constantly update the health value
         // moveing enemy to the current checkpoint its going to, at its speed times time.deltaTime
-        transform.position = Vector3.MoveTowards(transform.position, path.checkpoints[currentPoint].position, speed * Time.deltaTime);
-        float distance = Vector3.Distance(transform.position, path.checkpoints[currentPoint].position); // find distance
-        if(distance <= 0.05f) // if we're at the current point, or at least very very close
+        if (stunned == false)
         {
-            currentPoint++; // increase current point by 1, so now our enemy moves to the next point
+            transform.position = Vector3.MoveTowards(transform.position, path.checkpoints[currentPoint].position, speed * Time.deltaTime);
+            float distance = Vector3.Distance(transform.position, path.checkpoints[currentPoint].position); // find distance
+            if (distance <= 0.05f) // if we're at the current point, or at least very very close
+            {
+                currentPoint++; // increase current point by 1, so now our enemy moves to the next point
+            }
+            if (currentPoint >= path.checkpoints.Length)
+            {
+                EnemySpawner.enemiesAlive--; // subtract here
+                FindObjectOfType<GameManager>().lives--; // lose a life when enemy hits the last checkpoint
+                Destroy(gameObject); // when the enemy is at the last checkpoint, kill it
+                                     // lose health or lives for player
+            }
         }
-        if(currentPoint >= path.checkpoints.Length)
+        if(stunned == true)
         {
-            FindObjectOfType<GameManager>().lives--; // lose a life when enemy hits the last checkpoint
-            Destroy(gameObject); // when the enemy is at the last checkpoint, kill it
-            // lose health or lives for player
+            timer += Time.deltaTime; // start counting up
+            if(timer >= 0.5f)
+            {
+                stunned = false;
+                timer = 0;
+            }
         }
         if(health <= 0 && dying == false)
         {
+            EnemySpawner.enemiesAlive--; // subtract here
             StartCoroutine(EnemyDying());
         }
     }

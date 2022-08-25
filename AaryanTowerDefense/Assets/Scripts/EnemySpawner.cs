@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class EnemySpawner : MonoBehaviour
     public float timer;
     public int wave; // wave counter
     public int enemiesRemaining; // how many enemies to spawn
+    public static int enemiesAlive; // how many enemies are alive on screen
     // Start is called before the first frame update
     void Start()
     {
@@ -61,6 +63,15 @@ public class EnemySpawner : MonoBehaviour
         if(wave >= 15)
         {
             currentEnemy = 3;
+        }
+
+        if(wave > 25) // when we go over our last wave, stop spawning enemies
+        {
+            enemiesRemaining = 0; // wont spawn any more
+            if(enemiesAlive <= 0)
+            {
+                SceneManager.LoadScene(2); 
+            }
         }
     }
 }
