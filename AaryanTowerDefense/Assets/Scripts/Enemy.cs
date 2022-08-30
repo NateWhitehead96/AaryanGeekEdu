@@ -14,6 +14,8 @@ public class Enemy : MonoBehaviour
     public bool dying; // to know if the enemy is dying
     public bool stunned; // to know when the enemy has been hit by lightning
     float timer; // help us unstun the enemy
+    public ParticleSystem bloodEffect; // the particle effect that is blood
+    public GameObject bloodSplat; // decal or stain the enemy will leave
     // Start is called before the first frame update
     void Start()
     {
@@ -56,6 +58,7 @@ public class Enemy : MonoBehaviour
         if(health <= 0 && dying == false)
         {
             EnemySpawner.enemiesAlive--; // subtract here
+            bloodEffect.Play(); // play the blood!
             StartCoroutine(EnemyDying());
         }
     }
@@ -69,6 +72,7 @@ public class Enemy : MonoBehaviour
         GetComponent<BoxCollider2D>().enabled = false; // disable the collider
         speed = 0;
         yield return new WaitForSeconds(0.5f); // wait some time
+        Instantiate(bloodSplat, transform.position, transform.rotation); // spawn the blood splat
         Destroy(gameObject); // destroy the enemy
     }
 }
