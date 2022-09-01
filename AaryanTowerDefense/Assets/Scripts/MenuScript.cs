@@ -23,7 +23,8 @@ public class MenuScript : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("SampleScene"); // open our play scene
+        //SceneManager.LoadScene("SampleScene"); // open our play scene
+        FindObjectOfType<TransitionScript>().MoveToScene(1); // open our play scene
     }
 
     public void OpenSettings()

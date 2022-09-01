@@ -71,6 +71,7 @@ public class GameManager : MonoBehaviour
             {
                 Building newTower = Instantiate(towerToPlace, nearestTile.transform.position, transform.rotation); // spawn the tower
                 newTower.tile = nearestTile; // assign that tile
+                newTower.tile.type = towerToPlace.type; // assign the tower type to this tile
                 nearestTile.isOccupied = true; // set that tile to be occupied
                 towerToPlace = null; // reset our tower to place, make it nothing
                 Cursor.visible = true; // bring back default cursor

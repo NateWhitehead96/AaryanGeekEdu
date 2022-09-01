@@ -70,7 +70,8 @@ public class EnemySpawner : MonoBehaviour
             enemiesRemaining = 0; // wont spawn any more
             if(enemiesAlive <= 0)
             {
-                SceneManager.LoadScene(2); 
+                //SceneManager.LoadScene(2);
+                FindObjectOfType<TransitionScript>().MoveToScene(2);
             }
         }
     }

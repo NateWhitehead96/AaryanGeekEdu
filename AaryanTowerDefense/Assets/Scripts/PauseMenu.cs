@@ -15,6 +15,7 @@ public class PauseMenu : MonoBehaviour
 
     public void ReturnToMain()
     {
-        SceneManager.LoadScene("MainMenu");
+        //SceneManager.LoadScene("MainMenu");
+        FindObjectOfType<TransitionScript>().MoveToScene(0);
     }
 }

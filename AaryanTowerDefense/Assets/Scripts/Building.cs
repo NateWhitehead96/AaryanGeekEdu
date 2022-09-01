@@ -9,6 +9,8 @@ public class Building : MonoBehaviour
 
     public UpgradeSellCanvas canvas; // every tower knows and has access to this canvas
     public int damage; // this will be the towers damage, will help with upgrading
+
+    public ProjType type; // helping us know what type of tower is on the tile
     // Start is called before the first frame update
     void Start()
     {

@@ -8,6 +8,7 @@ public class Tile : MonoBehaviour
     public Color unoccupiedColor;
     public Color occupiedColor;
     public SpriteRenderer sprite; // access to sprites color
+    public ProjType type; // to know the type of tower on this tile
     // Start is called before the first frame update
     void Start()
     {
