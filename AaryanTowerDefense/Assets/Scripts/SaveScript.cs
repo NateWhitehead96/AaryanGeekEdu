@@ -5,7 +5,10 @@ using UnityEngine;
 public class SaveScript : MonoBehaviour
 {
     public GameManager manager; // access to all of it's variables
-
+    public GameObject ArrowTower; // variables for what towers to create
+    public GameObject CannonTower;
+    public GameObject ArcaneTower;
+    public GameObject LightningTower;
     private void Start()
     {
         LoadGame(); // when we open up play scene load our data
@@ -61,21 +64,25 @@ public class SaveScript : MonoBehaviour
                     if(PlayerPrefs.GetInt("Type" + i) == 0)
                     {
                         manager.tiles[i].type = ProjType.Arrow;
+                        Instantiate(ArrowTower, manager.tiles[i].transform.position, manager.tiles[i].transform.rotation);
                         // spawn or create the tower thats approriate for this spot
                     }
                     if (PlayerPrefs.GetInt("Type" + i) == 1)
                     {
                         manager.tiles[i].type = ProjType.Cannon;
+                        Instantiate(CannonTower, manager.tiles[i].transform.position, manager.tiles[i].transform.rotation);
                         // spawn or create the tower thats approriate for this spot
                     }
                     if (PlayerPrefs.GetInt("Type" + i) == 2)
                     {
                         manager.tiles[i].type = ProjType.Lightning;
+                        Instantiate(LightningTower, manager.tiles[i].transform.position, manager.tiles[i].transform.rotation);
                         // spawn or create the tower thats approriate for this spot
                     }
                     if (PlayerPrefs.GetInt("Type" + i) == 3)
                     {
                         manager.tiles[i].type = ProjType.Arcane;
+                        Instantiate(ArcaneTower, manager.tiles[i].transform.position, manager.tiles[i].transform.rotation);
                         // spawn or create the tower thats approriate for this spot
                     }
                 }

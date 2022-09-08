@@ -117,6 +117,7 @@ MonoBehaviour:
   tile: {fileID: 0}
   canvas: {fileID: 0}
   damage: 3
+  type: 2
 --- !u!58 &6755264659425799263
 CircleCollider2D:
   m_ObjectHideFlags: 0

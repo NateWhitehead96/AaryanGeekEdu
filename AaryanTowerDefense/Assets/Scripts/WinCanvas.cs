@@ -9,6 +9,7 @@ public class WinCanvas : MonoBehaviour
     public void ReplayGame()
     {
         //SceneManager.LoadScene(1); // load by build settings
+        PlayerPrefs.DeleteAll();
         FindObjectOfType<TransitionScript>().MoveToScene(1);
     }
     public void MainMenu()

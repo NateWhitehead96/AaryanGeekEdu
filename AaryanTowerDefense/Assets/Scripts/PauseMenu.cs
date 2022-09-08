@@ -16,6 +16,8 @@ public class PauseMenu : MonoBehaviour
     public void ReturnToMain()
     {
         //SceneManager.LoadScene("MainMenu");
+        FindObjectOfType<SaveScript>().SaveGame(); // save our progress when we exit the level
+        Time.timeScale = 1;
         FindObjectOfType<TransitionScript>().MoveToScene(0);
     }
 }

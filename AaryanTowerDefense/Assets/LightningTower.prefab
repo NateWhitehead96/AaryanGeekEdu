@@ -133,3 +133,4 @@ MonoBehaviour:
   tile: {fileID: 0}
   canvas: {fileID: 0}
   damage: 1
+  type: 3

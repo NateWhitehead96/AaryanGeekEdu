@@ -101,6 +101,7 @@ MonoBehaviour:
   tile: {fileID: 0}
   canvas: {fileID: 0}
   damage: 2
+  type: 1
 --- !u!114 &2708619709747926370
 MonoBehaviour:
   m_ObjectHideFlags: 0

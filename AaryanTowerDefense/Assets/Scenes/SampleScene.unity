@@ -393,6 +393,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &55343453
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -492,6 +493,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &61093505
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -591,6 +593,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &61481331
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -690,6 +693,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &66697922
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -922,6 +926,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &93464584
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1021,6 +1026,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &105655230
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1150,6 +1156,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &130912430
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1454,6 +1461,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &226214611
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1738,6 +1746,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &240194959
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1867,6 +1876,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &248123213
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1966,6 +1976,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &261046948
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2065,6 +2076,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &267208928
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2276,6 +2288,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &279938991
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2375,6 +2388,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &285618257
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2474,6 +2488,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &304474585
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2573,6 +2588,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &306836219
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2672,6 +2688,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &308212081
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2904,6 +2921,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &394247330
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3033,6 +3051,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &428338948
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3132,6 +3151,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &440377261
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3284,6 +3304,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &443876425
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3550,6 +3571,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &471816220
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3649,6 +3671,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &472098878
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3748,6 +3771,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &475770761
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3847,6 +3871,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &504526199
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3946,6 +3971,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &519100774
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4303,6 +4329,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &548365090
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4555,6 +4582,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &590729900
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4654,6 +4682,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &621857519
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4753,6 +4782,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &641773461
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4961,6 +4991,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &710343298
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5060,6 +5091,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &718937416
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5272,6 +5304,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &756736524
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5371,6 +5404,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &762030498
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5549,6 +5583,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &794908895
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5811,6 +5846,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &851337677
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6043,6 +6079,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &861956562
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6142,6 +6179,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &870024881
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6289,6 +6327,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &892883485
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6546,6 +6585,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &924938011
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6675,6 +6715,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &968519136
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6986,6 +7027,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1049302631
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7300,6 +7342,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1085597488
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7399,6 +7442,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1085624547
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7498,6 +7542,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1105324476
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7730,6 +7775,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1127004301
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7829,6 +7875,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1136383255
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7928,6 +7975,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1140652433
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8027,6 +8075,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1174213398
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8204,6 +8253,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1268234425
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8382,6 +8432,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1316453955
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8481,6 +8532,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1319690426
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8580,6 +8632,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1328419602
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8679,6 +8732,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1334051235
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8778,6 +8832,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1339255309
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8877,6 +8932,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1359775786
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8976,6 +9032,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1361199616
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9154,6 +9211,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1372807764
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9332,6 +9390,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1406328591
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9431,6 +9490,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1432124666
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9671,6 +9731,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1464875941
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9770,6 +9831,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1496290194
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9869,6 +9931,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1506879415
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9968,6 +10031,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1511085834
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10261,6 +10325,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1616866382}
   m_CullTransparentMesh: 1
+--- !u!1 &1632297284
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1632297286}
+  - component: {fileID: 1632297285}
+  m_Layer: 0
+  m_Name: SaveManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1632297285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632297284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e54c882dfd924bc43b35bcac8972d9c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 449499837}
+  ArrowTower: {fileID: 5445942863061509994, guid: a1221929a64416b4f849e54eb379d353, type: 3}
+  CannonTower: {fileID: 3137085441995809988, guid: c5e7189308c749e48ad58439b8c920f0, type: 3}
+  ArcaneTower: {fileID: 2969199467412382633, guid: 647bb293bfea643408ab6a7701a17fe4, type: 3}
+  LightningTower: {fileID: 7681039970913199763, guid: a3823756f362a8940aa61cbfef978268, type: 3}
+--- !u!4 &1632297286
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632297284}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 382.03638, y: 255.94786, z: -267.64307}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1646525824
 GameObject:
   m_ObjectHideFlags: 0
@@ -10309,6 +10421,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1646525827
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10408,6 +10521,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1652329458
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10507,6 +10621,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1680665207
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10606,6 +10721,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1691153930
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10765,6 +10881,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1768055126
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11076,6 +11193,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1792786082
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11308,6 +11426,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1821658085
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11485,6 +11604,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1846602574
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11584,6 +11704,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1873809510
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11713,6 +11834,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1890044418
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11889,6 +12011,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1960070808
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11988,6 +12111,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1983436438
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12087,6 +12211,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1992304702
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12186,6 +12311,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &1993816316
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12285,6 +12411,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &2033827993
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12558,6 +12685,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &2094115239
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12657,6 +12785,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &2098869487
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12756,6 +12885,7 @@ MonoBehaviour:
   unoccupiedColor: {r: 0.23255605, g: 0.735849, b: 0.2628064, a: 1}
   occupiedColor: {r: 0.0068084607, g: 0.4811321, b: 0.059204645, a: 1}
   sprite: {fileID: 0}
+  type: 0
 --- !u!212 &2110987801
 SpriteRenderer:
   m_ObjectHideFlags: 0
