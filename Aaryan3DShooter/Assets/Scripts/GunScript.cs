@@ -30,8 +30,10 @@ public class GunScript : MonoBehaviour
         
         Vector3 gunRotation = transform.rotation.eulerAngles; // store the guns rotations
         gunRotation.x -= xRotation; // set the rotations
+        gunRotation.x = (gunRotation.x > 180) ? gunRotation.x - 360 : gunRotation.x; // determine if the angle is going up or down
+        gunRotation.x = Mathf.Clamp(gunRotation.x, -80, 80); // hopefully clamp rotation before applying rotation
         transform.rotation = Quaternion.Euler(gunRotation); // apply to our gun
-        LimitRotation();
+        //LimitRotation();
     }
 
     private void LimitRotation() // use this to limit the rotations on our x-axis (up and down looking)
