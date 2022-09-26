@@ -30,6 +30,7 @@ public class AIEnemy : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<Bullet>()) // bullet collides with enemy
         {
+            print("hit by bullet");
             health -= 1; // deal damage
             Destroy(collision.gameObject);
         }
