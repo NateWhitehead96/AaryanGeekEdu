@@ -463,6 +463,8 @@ MonoBehaviour:
   bullet: {fileID: 6027785552341950300, guid: 6124213e3f13dca43b98eef67b1ff2f3, type: 3}
   shootPoint: {fileID: 984860925}
   shootForce: 100
+  currentClip: 6
+  totalAmmo: 60
 --- !u!43 &333313294
 Mesh:
   m_ObjectHideFlags: 0
@@ -720,9 +722,10 @@ GameObject:
   - component: {fileID: 386509315}
   - component: {fileID: 386509314}
   - component: {fileID: 386509313}
+  - component: {fileID: 386509319}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -840,6 +843,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &386509319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386509312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c6ef3ba871093e479f73bdd772e0a65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  money: 0
+  currentGun: {fileID: 298491705}
 --- !u!1 &539496964
 GameObject:
   m_ObjectHideFlags: 0
@@ -16070,6 +16088,7 @@ GameObject:
   - component: {fileID: 1764396939}
   - component: {fileID: 1764396938}
   - component: {fileID: 1764396937}
+  - component: {fileID: 1764396941}
   m_Layer: 5
   m_Name: HUD
   m_TagString: Untagged
@@ -16161,6 +16180,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1764396941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764396936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d09053d7e1f40f4ca8d7f4ae2b911da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthText: {fileID: 373902788}
+  ammoText: {fileID: 1489482567}
+  moneyText: {fileID: 1130098313}
+  waveText: {fileID: 1113355241}
+  player: {fileID: 386509319}
+  spawner: {fileID: 213378046}
 --- !u!1 &2092675591
 GameObject:
   m_ObjectHideFlags: 0

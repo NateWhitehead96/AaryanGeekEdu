@@ -9,6 +9,8 @@ public class AIEnemy : MonoBehaviour
     public Transform player; // player will be the target of our AI
 
     public int health; // how much health does ai man have
+    public int moneyDrop; // how much money the enemy gives when dies
+    public int damage; // how much damage this guy deals
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,7 @@ public class AIEnemy : MonoBehaviour
         if(health <= 0)
         {
             Destroy(gameObject); // destroy the enemy if its health is 0
+            FindObjectOfType<PlayerStats>().money += moneyDrop; // increase our money
         }
     }
 
@@ -33,6 +36,10 @@ public class AIEnemy : MonoBehaviour
             print("hit by bullet");
             health -= 1; // deal damage
             Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject.GetComponent<PlayerStats>().health -= damage;
         }
     }
 }

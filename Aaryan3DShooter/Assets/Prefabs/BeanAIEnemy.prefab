@@ -135,3 +135,5 @@ MonoBehaviour:
   agent: {fileID: 7809538728559605626}
   player: {fileID: 0}
   health: 1
+  moneyDrop: 5
+  damage: 1
