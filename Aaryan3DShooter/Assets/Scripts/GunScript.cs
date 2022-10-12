@@ -12,6 +12,8 @@ public class GunScript : MonoBehaviour
 
     [SerializeField] public int currentClip; // current ammo amount
     [SerializeField] public int totalAmmo; // how much ammo this gun has
+
+    public bool talkingToShop; // this bool will help us not shoot when shopping
     // Start is called before the first frame update
     void Start()
     {
@@ -22,8 +24,12 @@ public class GunScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RotateGun(); // rotate up and down
-        Shoot(); // pow pow blam blam
+        if(talkingToShop == false) // only outside of the shop will the gun shoot and rotate
+        {
+            RotateGun(); // rotate up and down
+            Shoot(); // pow pow blam blam
+
+        }
         Reload(); // reload dat stuff
     }
 
@@ -50,7 +56,7 @@ public class GunScript : MonoBehaviour
 
     public void Shoot()
     {
-        if (Input.GetMouseButtonDown(0) && currentClip > 0) // when we hit the left mouse button and have enough bullets
+        if (Input.GetMouseButtonDown(0) && currentClip > 0 && talkingToShop == false) // when we hit the left mouse button and have enough bullets
         {
             currentClip--; // subtract a bullet from our clip
             GameObject newBullet = Instantiate(bullet, shootPoint.position, shootPoint.rotation); // spawn the bullet and store it in newBullet

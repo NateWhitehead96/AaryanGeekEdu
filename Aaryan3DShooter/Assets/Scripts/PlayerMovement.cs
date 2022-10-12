@@ -21,7 +21,11 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Move(); // movement
-        Rotate(); // rotation
+        if(FindObjectOfType<GunScript>().talkingToShop == false) // when not in shop can rotate, this is unoptimal but okay for now
+        {
+            Rotate(); // rotation
+
+        }
         Jump(); // jump
     }
 
